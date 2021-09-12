@@ -34,6 +34,7 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  margin-bottom: 15px;
 }
 
 .hour {
@@ -68,4 +69,7 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+#hour-13 {
+margin-bottom: 0px;
 }

@@ -1,9 +1,14 @@
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMM Do YYYY"));
 
-$(".saveBtn").click(function(){
-    var input = $("textarea").value;
-    localStorage.setItem("inputText", input);
-})
+var type = $("#number9");
+var typeinput = localStorage.getItem("typeinput");
+type.textContent = typeinput;
 
-JSON.parse(localStorage.getItem("inputText"));
+$(".saveBtn").click(function() {
+    type.textContent = typeinput;
+    localStorage.setItem("typeinput", typeinput);
+    console.log()
+});
+
+// JSON.parse(localStorage.getItem("inputText"));
